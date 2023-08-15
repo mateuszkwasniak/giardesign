@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        17: "5.5625rem",
+        gd_section_padding: "5.5625rem",
       },
       colors: {
         gd_beige: "#DCC1AB",

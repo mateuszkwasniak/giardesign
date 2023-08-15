@@ -16,11 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js" defer></script>
+    <script src="./nav-script.js" defer></script>
+    <script src="./slider-script.js" defer></script>
   </head>
-  <body class="min-h-screen w-full">
+  <body class="w-full">
     <header
-      class="w-full lg:h-[72px] lg:px-17 fixed top-0 bg-gd_white flex justify-between items-center"
+      class="z-50 w-full lg:h-[72px] lg:px-gd_section_padding fixed top-0 bg-gd_white flex justify-between items-center"
     >
       <a href="#top">
         <img
@@ -39,7 +40,7 @@
               >
                 <span class="text-sm">Oferta</span>
                 <img
-                  src="assets/images/arrow.svg"
+                  src="./assets/icons/arrow.svg"
                   alt="arrow"
                   class="transition duration-300"
                 />
@@ -57,7 +58,7 @@
           </ul>
           <ul
             data-id="offer-links"
-            class="absolute top-10 flex flex-col gap-1 text-sm bg-gd_white opacity-0 transition duration-300 translate-y-5"
+            class="absolute top-10 flex flex-col gap-6 p-4 rounded-sm text-sm bg-gd_white opacity-0 transition duration-300 -translate-y-5"
           >
             <li>
               <a href="#offer">Projekty</a>
@@ -75,7 +76,7 @@
             class="flex items-center hover:opacity-75 transition duration-300"
             data-id="search-btn"
           >
-            <img src="assets/icons/search.svg" alt="search" />
+            <img src="./assets/icons/search.svg" alt="search" />
           </button>
           <input
             class="w-0 scale-x-0 px-4 py-1 bg-gd_grey rounded-lg outline-none transition duration-300 origin-right"
@@ -85,5 +86,128 @@
         </div>
       </div>
     </header>
+    <main>
+      <section
+        id="hero"
+        class="relative overflow-hidden w-full lg:min-h-[calc(100vh-72px)] lg:mt-[72px] bg-gd_beige"
+      >
+        <article
+          class="h-full w-screen absolute left-0 top-0 lg:pl-gd_section_padding flex gap-16 transition duration-1000 opacity-1"
+          data-id="slide-1"
+        >
+          <div class="py-[144.5px] flex-1 flex flex-col justify-center">
+            <h1 class="mb-11 font-headline font-medium text-6xl leading-[70px]">
+              Nowoczesna<br />aranżacja<br />Twojego ogrodu
+            </h1>
+            <p class="mb-23 text-base leading-6 mb-[72px]">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka<br />estetyka
+              realizacji. Oferujemy kompleksowy zakres usług<br />z
+              indywidualnym podejściem do każdego projektu.
+            </p>
+            <div class="flex gap-9">
+              <a
+                href="#contact"
+                class="flex px-6 pt-3 pb-[14px] rounded-full items-center text-bas text-gd_grey bg-gd_green hover:shadow-md hover:opacity-75 transition duration-300"
+                >Skontaktuj się z nami</a
+              >
+              <a
+                href="#gallery"
+                class="flex gap-2 px-[22px] pt-3 pb-[14px] rounded-full items-center text-base text-gd_green bg-none border border-gd_green hover:shadow-md hover:opacity-75 [&>img]:hover:animate-bounce transition duration-300"
+                >Zobacz nasze realizacje <img src="./assets/icons/down.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="lg:h-[calc(100vh-72px)] flex-1 overflow-hidden">
+            <img
+              src="./assets/images/hero.jpg"
+              alt="garden"
+              class="w-full object-cover"
+            />
+          </div>
+        </article>
+        <article
+          class="h-full w-screen absolute left-0 top-0 lg:pl-gd_section_padding flex gap-16 transition duration-1000 opacity-0"
+          data-id="slide-2"
+        >
+          <div class="py-[144.5px] flex-1 flex flex-col justify-center">
+            <h1 class="mb-11 font-headline font-medium text-6xl leading-[70px]">
+              Nowoczesna<br />aranżacja<br />Twojego ogrodu
+            </h1>
+            <p class="mb-23 text-base leading-6 mb-[72px]">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka<br />estetyka
+              realizacji. Oferujemy kompleksowy zakres usług<br />z
+              indywidualnym podejściem do każdego projektu.
+            </p>
+            <div class="flex gap-9">
+              <a
+                href="#contact"
+                class="flex px-6 pt-3 pb-[14px] rounded-full items-center text-bas text-gd_grey bg-gd_green hover:shadow-md hover:opacity-75 transition duration-300"
+                >Skontaktuj się z nami</a
+              >
+              <a
+                href="#gallery"
+                class="flex gap-2 px-[22px] pt-3 pb-[14px] rounded-full items-center text-base text-gd_green bg-none border border-gd_green hover:shadow-md hover:opacity-75 [&>img]:hover:animate-bounce transition duration-300"
+                >Zobacz nasze realizacje <img src="./assets/icons/down.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="flex-1 lg:h-[calc(100vh-72px)] overflow-hidden">
+            <img
+              src="./assets/images/hero.jpg"
+              alt="garden"
+              class="w-full object-cover"
+            />
+          </div>
+        </article>
+        <article
+          class="h-full w-screen absolute left-0 top-0 lg:pl-gd_section_padding flex gap-16 transition duration-1000 opacity-0"
+          data-id="slide-3"
+        >
+          <div class="py-[144.5px] flex-1 flex flex-col justify-center">
+            <h1 class="mb-11 font-headline font-medium text-6xl leading-[70px]">
+              Nowoczesna<br />aranżacja<br />Twojego ogrodu
+            </h1>
+            <p class="mb-23 text-base leading-6 mb-[72px]">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka<br />estetyka
+              realizacji. Oferujemy kompleksowy zakres usług<br />z
+              indywidualnym podejściem do każdego projektu.
+            </p>
+            <div class="flex gap-9">
+              <a
+                href="#contact"
+                class="flex px-6 pt-3 pb-[14px] rounded-full items-center text-bas text-gd_grey bg-gd_green hover:shadow-md hover:opacity-75 transition duration-300"
+                >Skontaktuj się z nami</a
+              >
+              <a
+                href="#gallery"
+                class="flex gap-2 px-[22px] pt-3 pb-[14px] rounded-full items-center text-base text-gd_green bg-none border border-gd_green hover:shadow-md hover:opacity-75 [&>img]:hover:animate-bounce transition duration-300"
+                >Zobacz nasze realizacje <img src="./assets/icons/down.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="flex-1 lg:h-[calc(100vh-72px)] overflow-hidden">
+            <img
+              src="./assets/images/hero.jpg"
+              alt="garden"
+              class="w-full object-cover"
+            />
+          </div>
+        </article>
+        <div class="absolute bottom-0 right-0 py-6 px-8 flex gap-8 bg-gd_grey">
+          <button
+            class="hover:opacity-75 transition duration-300"
+            data-id="btn-left"
+          >
+            <img src="assets/icons/left.svg" alt="left" />
+          </button>
+          <button
+            class="hover:opacity-75 transition duration-300"
+            data-id="btn-right"
+          >
+            <img src="assets/icons/right.svg" alt="right" />
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

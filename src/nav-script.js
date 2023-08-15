@@ -13,7 +13,7 @@ console.log(searchInput);
 const toggleOfferDropdown = () => {
   offerArrow.classList.toggle("rotate-180");
   offerLinks.classList.toggle("opacity-0");
-  offerLinks.classList.toggle("translate-y-5");
+  offerLinks.classList.toggle("-translate-y-5");
 };
 
 const toggleSearchInput = () => {
