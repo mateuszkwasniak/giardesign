@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-gd_black scroll-smooth;
+  }
+
+  li {
+    @apply cursor-pointer hover:opacity-75 transition duration-300;
+  }
+}

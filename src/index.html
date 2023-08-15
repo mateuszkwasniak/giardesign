@@ -7,6 +7,7 @@
       name="description"
       content="Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem."
     />
+    <title>GiardDesign</title>
     <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +16,74 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap"
       rel="stylesheet"
     />
-    <title>GiardDesign</title>
+    <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body class="min-h-screen w-full">
+    <header
+      class="w-full lg:h-[72px] lg:px-17 fixed top-0 bg-gd_white flex justify-between items-center"
+    >
+      <a href="#top">
+        <img
+          src="./assets/images/logo.svg"
+          alt="logo"
+          class="hover:opacity-75 transition duration-300"
+        />
+      </a>
+      <div class="flex items-center gap-12">
+        <nav class="relative">
+          <ul class="text-sm flex items-center gap-12">
+            <li>
+              <div
+                data-id="offer-dropdown"
+                class="flex items-center gap-[5px] cursor-pointe transition duration-300"
+              >
+                <span class="text-sm">Oferta</span>
+                <img
+                  src="assets/images/arrow.svg"
+                  alt="arrow"
+                  class="transition duration-300"
+                />
+              </div>
+            </li>
+            <li>
+              <a class="block" href="#about">O firmie</a>
+            </li>
+            <li>
+              <a class="block" href="#gallery">Realizacje</a>
+            </li>
+            <li>
+              <a class="block" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+          <ul
+            data-id="offer-links"
+            class="absolute top-10 flex flex-col gap-1 text-sm bg-gd_white opacity-0 transition duration-300 translate-y-5"
+          >
+            <li>
+              <a href="#offer">Projekty</a>
+            </li>
+            <li>
+              <a href="#offer">Wizualizacje</a>
+            </li>
+            <li>
+              <a href="#offer">Realizacje</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex gap-2 items-center">
+          <button
+            class="flex items-center hover:opacity-75 transition duration-300"
+            data-id="search-btn"
+          >
+            <img src="assets/icons/search.svg" alt="search" />
+          </button>
+          <input
+            class="w-0 scale-x-0 px-4 py-1 bg-gd_grey rounded-lg outline-none transition duration-300 origin-right"
+            placeholder="Szukaj..."
+            autofocus
+          />
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

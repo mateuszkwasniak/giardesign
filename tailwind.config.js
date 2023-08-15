@@ -6,6 +6,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      spacing: {
+        17: "5.5625rem",
+      },
       colors: {
         gd_beige: "#DCC1AB",
         gd_grey: "#F5F0EC",
@@ -14,7 +17,6 @@ module.exports = {
         gd_white: "#FFFFFF",
       },
     },
-    colors: {},
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
       headline: ["Montserrat", "sans-serif"],
