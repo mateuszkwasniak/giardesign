@@ -16,6 +16,16 @@ module.exports = {
         gd_black: "#111111",
         gd_white: "#FFFFFF",
       },
+      animation: {
+        bounce_rt: "bounce_right 0.75s linear infinite",
+      },
+      keyframes: {
+        bounce_right: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],

@@ -5,7 +5,6 @@ const btnLeft = document.querySelector("button[data-id='btn-left']");
 let currentSlide = 0;
 
 const goToSlide = function (slideNum) {
-  console.log("Going to: " + slideNum);
   slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - slideNum)}%)`;
     if (idx === slideNum) {

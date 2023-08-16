@@ -13,11 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
     <script src="./nav-script.js" defer></script>
     <script src="./slider-script.js" defer></script>
+    <script src="./offer-script.js" defer></script>
   </head>
   <body class="w-full">
     <header
@@ -79,7 +80,7 @@
             <img src="./assets/icons/search.svg" alt="search" />
           </button>
           <input
-            class="w-0 scale-x-0 px-4 py-1 bg-gd_grey rounded-lg outline-none transition duration-300 origin-right"
+            class="w-0 scale-x-0 px-4 py-1 bg-gd_grey rounded-full outline-none transition duration-300 origin-right"
             placeholder="Szukaj..."
             autofocus
           />
@@ -99,7 +100,7 @@
             <h1 class="mb-11 font-headline font-medium text-6xl leading-[70px]">
               Nowoczesna<br />aranżacja<br />Twojego ogrodu
             </h1>
-            <p class="mb-23 text-base leading-6 mb-[72px]">
+            <p class="mb-23 text-base leading-[150%] mb-[72px]">
               Marka GiardDesign to wieloletnie doświadczenie i wysoka<br />estetyka
               realizacji. Oferujemy kompleksowy zakres usług<br />z
               indywidualnym podejściem do każdego projektu.
@@ -133,7 +134,7 @@
             <h1 class="mb-11 font-headline font-medium text-6xl leading-[70px]">
               Nowoczesna<br />aranżacja<br />Twojego ogrodu
             </h1>
-            <p class="mb-23 text-base leading-6 mb-[72px]">
+            <p class="mb-23 text-base leading-[150%] mb-[72px]">
               Marka GiardDesign to wieloletnie doświadczenie i wysoka<br />estetyka
               realizacji. Oferujemy kompleksowy zakres usług<br />z
               indywidualnym podejściem do każdego projektu.
@@ -167,7 +168,7 @@
             <h1 class="mb-11 font-headline font-medium text-6xl leading-[70px]">
               Nowoczesna<br />aranżacja<br />Twojego ogrodu
             </h1>
-            <p class="mb-23 text-base leading-6 mb-[72px]">
+            <p class="mb-23 text-base leading-[150%] mb-[72px]">
               Marka GiardDesign to wieloletnie doświadczenie i wysoka<br />estetyka
               realizacji. Oferujemy kompleksowy zakres usług<br />z
               indywidualnym podejściem do każdego projektu.
@@ -206,6 +207,107 @@
           >
             <img src="assets/icons/right.svg" alt="right" />
           </button>
+        </div>
+      </section>
+      <section
+        id="#offer"
+        class="w-full pt-[120px] pb-[160px] lg:px-gd_section_padding bg-gd_grey"
+      >
+        <article class="ml-[200px] mb-24">
+          <span class="block text-xs text-gd_green mb-4">Oferta</span>
+          <h2
+            class="font-headline font-medium text-5xl mb-8 tracking-[-1.44px]"
+          >
+            Działamy
+            <span class="font-sans italic font-medium tracking-normal"
+              >kompleksowo</span
+            >
+          </h2>
+          <p class="leading-[150%] tracking-[-0.16px]">
+            Oferujemy kompletną obsługę inwestycji terenów zielonych.
+            Projektujemy nowoczesne ogrody<br />przydomowe oraz rezydencjonalne.
+            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy<br />
+            w życie, a na każdym etapie posłużymy radą i wieloletnim
+            doświadczeniem.
+          </p>
+        </article>
+        <div class="flex gap-16">
+          <article
+            class="px-10 py-12 justify-between bg-gd_white flex-1 flex flex-col rounded-[28px] cursor-pointer hover:shadow-2xl hover:scale-[1.01] transition duration-300"
+            data-id="card"
+          >
+            <div class="mb-[34px]">
+              <img src="./assets/icons/pen.svg" alt="pen" />
+            </div>
+            <h3
+              class="mb-3 font-headline font-medium text-[28px] tracking-[-1.4px]"
+            >
+              Projekty
+            </h3>
+            <p class="mb-[63px] text-sm leading-[150%]">
+              Zaprojektujemy Twój ogród w nowoczesnym<br />
+              stylu i z najlepszym wykorzystaniem<br />
+              istniejącej przestrzeni.
+            </p>
+            <a
+              class="w-fit pb-1 flex flex-nowrap gap-[10px] text-gd_green whitespace-nowrap border-b border-gd_green [&>img]:hover:animate-bounce_rt"
+              href="./index.html"
+              target="_blank"
+            >
+              Dowiedz się więcej
+              <img src="./assets/icons/sm-right.svg" alt="arrow" />
+            </a>
+          </article>
+          <article
+            class="px-10 py-12 justify-between bg-gd_white flex-1 flex flex-col rounded-[28px] cursor-pointer hover:shadow-2xl hover:scale-[1.01] transition duration-300"
+            data-id="card"
+          >
+            <div class="mb-[34px]">
+              <img src="./assets/icons/eye.svg" alt="pen" />
+            </div>
+            <h3
+              class="mb-3 font-headline font-medium text-[28px] tracking-[-1.4px]"
+            >
+              Wizualizacje
+            </h3>
+            <p class="mb-[63px] text-sm leading-[150%]">
+              Przedstawimy Ci projekty koncepcyjne<br />w postaci wirtualnego
+              spaceru animowanego<br />
+              w technologii 3D.
+            </p>
+            <a
+              class="w-fit pb-1 flex flex-nowrap gap-[10px] text-gd_green whitespace-nowrap border-b border-gd_green [&>img]:hover:animate-bounce_rt"
+              href="./index.html"
+            >
+              Dowiedz się więcej
+              <img src="./assets/icons/sm-right.svg" alt="arrow" />
+            </a>
+          </article>
+          <article
+            class="px-10 py-12 justify-between bg-gd_white flex-1 flex flex-col rounded-[28px] cursor-pointer hover:shadow-2xl hover:scale-[1.01] transition duration-300"
+            data-id="card"
+          >
+            <div class="mb-[34px]">
+              <img src="./assets/icons/stars.svg" alt="pen" />
+            </div>
+            <h3
+              class="mb-3 font-headline font-medium text-[28px] tracking-[-1.4px]"
+            >
+              Realizacje
+            </h3>
+            <p class="mb-[63px] text-sm leading-[150%]">
+              Zrealizujemy Twoje marzenie przy użyciu<br />najnowszych rozwiązań
+              i zaawansowanych<br />
+              technologii.
+            </p>
+            <a
+              class="w-fit pb-1 flex flex-nowrap gap-[10px] text-gd_green whitespace-nowrap border-b border-gd_green [&>img]:hover:animate-bounce_rt"
+              href="#gallery"
+            >
+              Zobacz nasze realizacje
+              <img src="./assets/icons/sm-right.svg" alt="arrow" />
+            </a>
+          </article>
         </div>
       </section>
     </main>

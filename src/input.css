@@ -8,6 +8,6 @@
   }
 
   li {
-    @apply cursor-pointer hover:opacity-75 transition duration-300;
+    @apply cursor-pointer hover:opacity-50 transition duration-300;
   }
 }

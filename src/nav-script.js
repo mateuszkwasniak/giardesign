@@ -8,8 +8,6 @@ const searchInput = document.querySelector(
   "button[data-id='search-btn'] + input"
 );
 
-console.log(searchInput);
-
 const toggleOfferDropdown = () => {
   offerArrow.classList.toggle("rotate-180");
   offerLinks.classList.toggle("opacity-0");
