@@ -16,9 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
-    <script src="./nav-script.js" defer></script>
-    <script src="./slider-script.js" defer></script>
-    <script src="./offer-script.js" defer></script>
+    <script src="./src/nav-script.js" defer></script>
+    <script src="./src/slider-script.js" defer></script>
+    <script src="./src/offer-script.js" defer></script>
   </head>
   <body class="w-full">
     <header
@@ -26,7 +26,7 @@
     >
       <a href="#top">
         <img
-          src="./assets/images/logo.svg"
+          src="./src/assets/images/logo.svg"
           alt="logo"
           class="hover:opacity-75 transition duration-300"
         />
@@ -41,7 +41,7 @@
               >
                 <span class="text-sm">Oferta</span>
                 <img
-                  src="./assets/icons/arrow.svg"
+                  src="./src/assets/icons/arrow.svg"
                   alt="arrow"
                   class="transition duration-300"
                 />
@@ -77,7 +77,7 @@
             class="flex items-center hover:opacity-75 transition duration-300"
             data-id="search-btn"
           >
-            <img src="./assets/icons/search.svg" alt="search" />
+            <img src="./src/assets/icons/search.svg" alt="search" />
           </button>
           <input
             class="w-0 scale-x-0 px-4 py-1 bg-gd_grey rounded-full outline-none transition duration-300 origin-right"
@@ -114,13 +114,14 @@
               <a
                 href="#gallery"
                 class="flex gap-2 px-[22px] pt-3 pb-[14px] rounded-full items-center text-base text-gd_green bg-none border border-gd_green hover:shadow-md hover:opacity-75 [&>img]:hover:animate-bounce transition duration-300"
-                >Zobacz nasze realizacje <img src="./assets/icons/down.svg" />
+                >Zobacz nasze realizacje
+                <img src="./src/assets/icons/down.svg" />
               </a>
             </div>
           </div>
           <div class="lg:h-[calc(100vh-72px)] flex-1 overflow-hidden">
             <img
-              src="./assets/images/hero.png"
+              src="./src/assets/images/hero.png"
               alt="hero"
               class="w-full object-cover"
             />
@@ -148,13 +149,14 @@
               <a
                 href="#gallery"
                 class="flex gap-2 px-[22px] pt-3 pb-[14px] rounded-full items-center text-base text-gd_green bg-none border border-gd_green hover:shadow-md hover:opacity-75 [&>img]:hover:animate-bounce transition duration-300"
-                >Zobacz nasze realizacje <img src="./assets/icons/down.svg" />
+                >Zobacz nasze realizacje
+                <img src="./src/assets/icons/down.svg" />
               </a>
             </div>
           </div>
           <div class="flex-1 lg:h-[calc(100vh-72px)] overflow-hidden">
             <img
-              src="./assets/images/hero.png"
+              src="./src/assets/images/hero.png"
               alt="hero"
               class="w-full object-cover"
             />
@@ -182,13 +184,14 @@
               <a
                 href="#gallery"
                 class="flex gap-2 px-[22px] pt-3 pb-[14px] rounded-full items-center text-base text-gd_green bg-none border border-gd_green hover:shadow-md hover:opacity-75 [&>img]:hover:animate-bounce transition duration-300"
-                >Zobacz nasze realizacje <img src="./assets/icons/down.svg" />
+                >Zobacz nasze realizacje
+                <img src="./src/assets/icons/down.svg" />
               </a>
             </div>
           </div>
           <div class="flex-1 lg:h-[calc(100vh-72px)] overflow-hidden">
             <img
-              src="./assets/images/hero.png"
+              src="./src/assets/images/hero.png"
               alt="hero"
               class="w-full object-cover"
             />
@@ -199,13 +202,13 @@
             class="hover:opacity-75 transition duration-300"
             data-id="btn-left"
           >
-            <img src="assets/icons/left.svg" alt="left" />
+            <img src="./src/assets/icons/left.svg" alt="left" />
           </button>
           <button
             class="hover:opacity-75 transition duration-300"
             data-id="btn-right"
           >
-            <img src="assets/icons/right.svg" alt="right" />
+            <img src="./src/assets/icons/right.svg" alt="right" />
           </button>
         </div>
       </section>
@@ -237,7 +240,7 @@
             data-id="card"
           >
             <div class="mb-[34px]">
-              <img src="./assets/icons/pen.svg" alt="pen" />
+              <img src="./src/assets/icons/pen.svg" alt="pen" />
             </div>
             <h3
               class="mb-3 font-headline font-medium text-[28px] tracking-[-1.4px]"
@@ -255,7 +258,7 @@
               target="_blank"
             >
               Dowiedz się więcej
-              <img src="./assets/icons/sm-right.svg" alt="arrow" />
+              <img src="./src/assets/icons/sm-right.svg" alt="arrow" />
             </a>
           </article>
           <article
@@ -263,7 +266,7 @@
             data-id="card"
           >
             <div class="mb-[34px]">
-              <img src="./assets/icons/eye.svg" alt="pen" />
+              <img src="./src/assets/icons/eye.svg" alt="pen" />
             </div>
             <h3
               class="mb-3 font-headline font-medium text-[28px] tracking-[-1.4px]"
@@ -281,7 +284,7 @@
               target="_blank"
             >
               Dowiedz się więcej
-              <img src="./assets/icons/sm-right.svg" alt="arrow" />
+              <img src="./src/assets/icons/sm-right.svg" alt="arrow" />
             </a>
           </article>
           <article
@@ -289,7 +292,7 @@
             data-id="card"
           >
             <div class="mb-[34px]">
-              <img src="./assets/icons/stars.svg" alt="pen" />
+              <img src="./src/assets/icons/stars.svg" alt="pen" />
             </div>
             <h3
               class="mb-3 font-headline font-medium text-[28px] tracking-[-1.4px]"
@@ -306,10 +309,30 @@
               href="#gallery"
             >
               Zobacz nasze realizacje
-              <img src="./assets/icons/sm-right.svg" alt="arrow" />
+              <img src="./src/assets/icons/sm-right.svg" alt="arrow" />
             </a>
           </article>
         </div>
+      </section>
+      <section id="#about">
+        <article class="ml-[200px] mb-24">
+          <span class="block text-xs text-gd_green mb-4">Oferta</span>
+          <h2
+            class="font-headline font-medium text-5xl mb-8 tracking-[-1.44px]"
+          >
+            Działamy
+            <span class="font-sans italic font-medium tracking-normal"
+              >kompleksowo</span
+            >
+          </h2>
+          <p class="leading-[150%] tracking-[-0.16px]">
+            Oferujemy kompletną obsługę inwestycji terenów zielonych.
+            Projektujemy nowoczesne ogrody<br />przydomowe oraz rezydencjonalne.
+            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy<br />
+            w życie, a na każdym etapie posłużymy radą i wieloletnim
+            doświadczeniem.
+          </p>
+        </article>
       </section>
     </main>
   </body>
