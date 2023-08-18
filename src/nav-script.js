@@ -17,6 +17,8 @@ const toggleOfferDropdown = () => {
 const toggleSearchInput = () => {
   searchInput.classList.toggle("scale-x-0");
   searchInput.classList.toggle("w-0");
+  searchInput.classList.toggle("absolute");
+  searchInput.classList.toggle("r-[9999px]");
 };
 
 offerDropdown.addEventListener("click", toggleOfferDropdown);
