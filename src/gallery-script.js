@@ -53,7 +53,7 @@ closeGalleryModalBtn.addEventListener("click", () => {
 
 rightGalleryModalBtn.addEventListener("click", () => {
   if (activeImage === totalImages - 1) {
-    activeImage = 1;
+    activeImage = 0;
   } else {
     activeImage++;
   }
