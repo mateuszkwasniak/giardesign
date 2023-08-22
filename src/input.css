@@ -11,3 +11,17 @@
     @apply cursor-pointer hover:opacity-50 transition duration-300;
   }
 }
+
+:root {
+  --gd-section-padding: 5.5625rem;
+}
+
+@layer utilities {
+  .custom-bg {
+    background: linear-gradient(
+      360deg,
+      #dcc1ab 0%,
+      rgba(214, 183, 158, 0) 100%
+    );
+  }
+}

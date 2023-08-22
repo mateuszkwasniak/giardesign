@@ -553,6 +553,40 @@ li:hover {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -585,8 +619,60 @@ li:hover {
   top: 2.5rem;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-\[-10\] {
+  right: -10;
+}
+
+.top-\[-10\] {
+  top: -10;
+}
+
+.top-\[-10px\] {
+  top: -10px;
+}
+
+.right-\[10\] {
+  right: 10;
+}
+
+.top-\[10px\] {
+  top: 10px;
+}
+
+.top-\[10\] {
+  top: 10;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .z-50 {
   z-index: 50;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.-z-50 {
+  z-index: -50;
 }
 
 .mb-10 {
@@ -621,6 +707,10 @@ li:hover {
   margin-bottom: 34px;
 }
 
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
+
 .mb-\[63px\] {
   margin-bottom: 63px;
 }
@@ -629,8 +719,16 @@ li:hover {
   margin-bottom: 72px;
 }
 
-.ml-\[200px\] {
-  margin-left: 200px;
+.ml-\[160px\] {
+  margin-left: 160px;
+}
+
+.ml-\[calc\(200px-var\(--gd-section-padding\)\)\] {
+  margin-left: calc(200px - var(--gd-section-padding));
+}
+
+.mr-\[40px\] {
+  margin-right: 40px;
 }
 
 .mt-\[135px\] {
@@ -645,16 +743,72 @@ li:hover {
   display: flex;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
 .h-full {
   height: 100%;
 }
 
-.max-h-screen {
-  max-height: 100vh;
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[90\%\] {
+  height: 90%;
+}
+
+.h-\[85\%\] {
+  height: 85%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[82\%\] {
+  height: 82%;
+}
+
+.h-\[82\.5\%\] {
+  height: 82.5%;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-0 {
   width: 0px;
+}
+
+.w-\[700px\] {
+  width: 700px;
 }
 
 .w-fit {
@@ -670,48 +824,40 @@ li:hover {
   width: 100vw;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.flex-\[2\] {
-  flex: 2;
-}
-
-.flex-\[1\] {
-  flex: 1;
-}
-
-.flex-\[3\] {
-  flex: 3;
-}
-
-.flex-\[3\/4\] {
-  flex: 3/4;
-}
-
-.flex-\[4\/3\] {
-  flex: 4/3;
-}
-
-.flex-\[1\.5\] {
-  flex: 1.5;
-}
-
-.flex-\[1\.8\] {
-  flex: 1.8;
-}
-
-.flex-grow-\[1\] {
-  flex-grow: 1;
-}
-
-.flex-grow-\[2\] {
-  flex-grow: 2;
-}
-
-.flex-grow-\[1\/2\] {
-  flex-grow: 1/2;
 }
 
 .origin-right {
@@ -720,6 +866,21 @@ li:hover {
 
 .-translate-y-5 {
   --tw-translate-y: -1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[50\%\] {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[-50\%\] {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[50\%\] {
+  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -797,8 +958,16 @@ li:hover {
   gap: 5px;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .whitespace-nowrap {
@@ -815,6 +984,10 @@ li:hover {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .border {
@@ -866,6 +1039,14 @@ li:hover {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-10 {
@@ -933,6 +1114,38 @@ li:hover {
   padding-top: 120px;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
 .font-headline {
   font-family: Montserrat, sans-serif;
 }
@@ -970,8 +1183,30 @@ li:hover {
   line-height: 1rem;
 }
 
+.text-\[8px\] {
+  font-size: 8px;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-medium {
   font-weight: 500;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .italic {
@@ -1006,6 +1241,11 @@ li:hover {
   letter-spacing: 0em;
 }
 
+.text-gd_black {
+  --tw-text-opacity: 1;
+  color: rgb(17 17 17 / var(--tw-text-opacity));
+}
+
 .text-gd_green {
   --tw-text-opacity: 1;
   color: rgb(27 91 49 / var(--tw-text-opacity));
@@ -1016,8 +1256,36 @@ li:hover {
   color: rgb(245 240 236 / var(--tw-text-opacity));
 }
 
+.text-\[8\] {
+  color: 8;
+}
+
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none {
@@ -1039,6 +1307,18 @@ li:hover {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.custom-bg {
+  background: linear-gradient(
+      360deg,
+      #dcc1ab 0%,
+      rgba(214, 183, 158, 0) 100%
+    );
+}
+
+:root {
+  --gd-section-padding: 5.5625rem;
 }
 
 .hover\:scale-\[1\.01\]:hover {
@@ -1064,24 +1344,12 @@ li:hover {
 }
 
 @media (min-width: 768px) {
-  .md\:flex-grow-\[0\] {
-    flex-grow: 0;
+  .md\:h-\[82\.5\%\] {
+    height: 82.5%;
   }
 
-  .md\:flex-grow-\[2\] {
-    flex-grow: 2;
-  }
-
-  .md\:flex-grow-\[3\] {
-    flex-grow: 3;
-  }
-
-  .md\:flex-grow-\[4\] {
-    flex-grow: 4;
-  }
-
-  .md\:flex-grow-\[4\/3\] {
-    flex-grow: 4/3;
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 }
 
@@ -1098,10 +1366,6 @@ li:hover {
     height: calc(100vh - 72px);
   }
 
-  .lg\:max-h-screen {
-    max-height: 100vh;
-  }
-
   .lg\:max-h-\[calc\(100vh-72px\)\] {
     max-height: calc(100vh - 72px);
   }
@@ -1110,56 +1374,12 @@ li:hover {
     min-height: calc(100vh - 72px);
   }
 
-  .lg\:flex-\[2\] {
-    flex: 2;
-  }
-
-  .lg\:flex-\[3\] {
-    flex: 3;
-  }
-
-  .lg\:flex-\[1\/2\] {
-    flex: 1/2;
-  }
-
-  .lg\:flex-\[1\/4\] {
-    flex: 1/4;
-  }
-
-  .lg\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .lg\:flex-\[1\.8\] {
-    flex: 1.8;
-  }
-
   .lg\:flex-\[1\.5\] {
     flex: 1.5;
   }
 
-  .lg\:flex-grow-\[2\] {
-    flex-grow: 2;
-  }
-
-  .lg\:flex-grow-\[4\/3\] {
-    flex-grow: 4/3;
-  }
-
-  .lg\:flex-grow-\[4\] {
-    flex-grow: 4;
-  }
-
-  .lg\:flex-grow-\[1\] {
-    flex-grow: 1;
-  }
-
-  .lg\:flex-grow-\[-\] {
-    flex-grow: -;
-  }
-
-  .lg\:flex-grow-\[0\] {
-    flex-grow: 0;
+  .lg\:flex-\[1\.8\] {
+    flex: 1.8;
   }
 
   .lg\:px-gd_section_padding {
@@ -1174,6 +1394,19 @@ li:hover {
   .lg\:pr-gd_section_padding {
     padding-right: 5.5625rem;
   }
+}
+
+.\[\&\:\:backdrop\]\:bg-slate-500::backdrop {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.\[\&\:\:backdrop\]\:opacity-60::backdrop {
+  opacity: 0.6;
+}
+
+.\[\&\:\:backdrop\]\:opacity-80::backdrop {
+  opacity: 0.8;
 }
 
 @keyframes bounce {

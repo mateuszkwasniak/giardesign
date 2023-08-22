@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="w-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,8 +23,10 @@
     <script src="./src/nav-script.js" defer></script>
     <script src="./src/slider-script.js" defer></script>
     <script src="./src/offer-script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2" defer></script>
+    <script src="./src/gallery-script.js" defer></script>
   </head>
-  <body class="w-full">
+  <body class="w-full overflow-x-hidden">
     <header
       class="z-50 w-full lg:h-[72px] lg:px-gd_section_padding fixed top-0 bg-gd_white flex justify-between items-center"
     >
@@ -66,13 +68,13 @@
             class="absolute top-10 flex flex-col gap-6 p-4 rounded-sm text-sm bg-gd_white opacity-0 transition duration-300 -translate-y-5"
           >
             <li>
-              <a href="#offer">Projekty</a>
+              <a href="#gallery">Projekty</a>
             </li>
             <li>
-              <a href="#offer">Wizualizacje</a>
+              <a href="#gallery">Wizualizacje</a>
             </li>
             <li>
-              <a href="#offer">Realizacje</a>
+              <a href="#gallery">Realizacje</a>
             </li>
           </ul>
         </nav>
@@ -91,7 +93,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="w-full">
       <section
         id="hero"
         class="relative overflow-hidden w-full lg:min-h-[calc(100vh-72px)] lg:mt-[72px] bg-gd_beige"
@@ -226,7 +228,7 @@
         id="#offer"
         class="w-full pt-[120px] pb-[160px] lg:px-gd_section_padding bg-gd_grey"
       >
-        <article class="ml-[200px] mb-24">
+        <article class="ml-[calc(200px-var(--gd-section-padding))] mb-24">
           <span class="block text-xs text-gd_green mb-4">Oferta</span>
           <h2
             class="font-headline font-medium text-5xl mb-8 tracking-[-1.44px]"
@@ -325,7 +327,7 @@
         </div>
       </section>
       <section
-        id="#about"
+        id="about"
         class="lg:max-h-[calc(100vh-72px)] overflow-hidden lg:pr-gd_section_padding flex gap-16 bg-gd_green"
       >
         <div class="flex-1 lg:flex-[1.8]">
@@ -363,6 +365,116 @@
             </a>
           </div>
         </article>
+      </section>
+      <section id="gallery" class="relative w-screen pt-[120px] bg-gd_grey">
+        <div class="ml-[160px] mb-24">
+          <span class="block text-xs text-gd_green mb-4">Realizacje</span>
+          <h2
+            class="font-headline font-medium text-5xl text-gd_black mb-10 tracking-[-1.44px] leading-[115%]"
+          >
+            Nasze
+            <span class="font-sans italic font-medium tracking-normal"
+              >projekty</span
+            >
+          </h2>
+        </div>
+        <dialog
+          id="modal"
+          class="w-[100%] h-[100%] md:w-[50%] md:h-[82.5%] [&::backdrop]:bg-slate-500 [&::backdrop]:opacity-80"
+        >
+          <button
+            class="absolute w-8 h-8 text-5xl flex items-center justify-center top-10 right-10 rounded-sm shadow-xl p-2 z-50 outline-none bg-gd_white opacity-80"
+          >
+            <img
+              src="./src/assets/icons/close.svg"
+              alt="close"
+              class="w-5 h-5 object-cover"
+            />
+          </button>
+          <div
+            class="flex gap-4 z-50 absolute bottom-10 left-1/2 -translate-x-[50%] bg-gd_white opacity-80 rounded-sm"
+          >
+            <div class="cursor-pointer" id="gallery-left">
+              <img src="./src/assets/icons/left.svg" alt="left" />
+            </div>
+            <div
+              id="gallery-item-num"
+              class="text-lg font-semibold flex items-center justify-center"
+            ></div>
+            <div class="cursor-pointer" id="gallery-right">
+              <img src="./src/assets/icons/right.svg" alt="right" />
+            </div>
+          </div>
+        </dialog>
+        <div
+          id="gradient"
+          class="absolute w-screen h-[50%] bottom-0 left-0 z-10 custom-bg"
+        ></div>
+        <div id="gallery-wrapper">
+          <div data-id="1" class="mr-[40px] mb-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-8.png"
+              alt="gallery-item"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="2" class="mr-[40px] mb-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-7.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="3" class="mb-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-6.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="4" class="mr-[40px] mb-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-5.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="5" class="mr-[40px] mb-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-4.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="6" class="mb-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-3.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="7" class="mr-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-2.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="8" class="mr-[40px] cursor-pointer">
+            <img
+              src="./src/assets/images/Photo-1.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div data-id="9" class="grid-item cursor-pointer">
+            <img
+              src="./src/assets/images/Photo.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </section>
     </main>
   </body>
